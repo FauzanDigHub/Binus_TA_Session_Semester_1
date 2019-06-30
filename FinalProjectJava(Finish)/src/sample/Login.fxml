@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <TextField fx:id="usernameField" layoutX="370.0" layoutY="86.0" promptText="Insert Username" />
+      <TextField fx:id="passwordField" layoutX="370.0" layoutY="127.0" promptText="Insert Password" />
+      <Button layoutX="459.0" layoutY="315.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <Button layoutX="473.0" layoutY="166.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Text fx:id="isTaken" fill="RED" layoutX="370.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="successRegister" fill="#46e531" layoutX="370.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <TextField fx:id="userRegisterField" layoutX="370.0" layoutY="229.0" promptText="Insert New Username" />
+      <TextField fx:id="passRegisterField" layoutX="370.0" layoutY="270.0" promptText="Insert New Password" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../anything.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Vote.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Hand.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
